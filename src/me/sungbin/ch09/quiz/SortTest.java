@@ -16,23 +16,26 @@ public class SortTest {
         Sort sort = null;
         int[] arr = {1, 2, 3, 4, 5};
 
-        if (str.equals("B") || str.equals("b")) {
-            sort = new BubbleSort();
-            sort.ascending(arr);
-            sort.descending(arr);
-            sort.description();
-        } else if (str.equals("H") || str.equals("h")) {
-            sort = new HeapSort();
-            sort.ascending(arr);
-            sort.descending(arr);
-            sort.description();
-        } else if (str.equals("Q") || str.equals("q")) {
-            sort = new QuickSort();
-            sort.ascending(arr);
-            sort.descending(arr);
-            sort.description();
-        } else {
-            System.out.println("존재하지 않는 알고리즘입니다.");
+        switch (str) {
+            case "B", "b" -> {
+                sort = new BubbleSort();
+                sort.ascending(arr);
+                sort.descending(arr);
+                sort.description();
+            }
+            case "H", "h" -> {
+                sort = new HeapSort();
+                sort.ascending(arr);
+                sort.descending(arr);
+                sort.description();
+            }
+            case "Q", "q" -> {
+                sort = new QuickSort();
+                sort.ascending(arr);
+                sort.descending(arr);
+                sort.description();
+            }
+            default -> System.out.println("존재하지 않는 알고리즘입니다.");
         }
         scanner.close();
     }
