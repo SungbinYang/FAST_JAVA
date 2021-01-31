@@ -59,3 +59,5 @@
  - Inner Class
  - Lambda
  - Stream
+# ch13
+ - Exception Handling ( Checked Exception vs RuntimeException )
