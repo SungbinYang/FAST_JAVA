@@ -55,3 +55,7 @@
  - Stack & Queue
  - Set interface
  - Map interface
+# ch12
+ - Inner Class
+ - Lambda
+ - Stream
